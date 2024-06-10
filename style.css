@@ -86,4 +86,40 @@ body {
   justify-content: space-between;
   margin-right: -6px;
   text-transform: uppercase;
+}
+
+.hero__form {
+  max-width: 327px;
+  margin: 0 auto;
+}
+
+fieldset {
+  border: none;
+  display: inline-block;
+}
+
+label {
+  margin-bottom: 9px;
+}
+
+#card-name,
+#card-number {
+  display: block;
+  width: 100%;
+}
+
+.exp-card {
+  max-width: 72px;
+}
+
+.cvc-wrapper {
+  display: inline-block;
+  max-width: 164px;
+}
+.cvc-wrapper input {
+  width: 100%;
+}
+
+.form__btn {
+  width: 100%;
 }/*# sourceMappingURL=style.css.map */

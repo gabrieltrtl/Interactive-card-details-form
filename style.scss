@@ -92,8 +92,38 @@ body {
   
 }
 
+.hero__form {
+  max-width: 327px;
+  margin: 0 auto;
+}
 
+fieldset {
+  border: none;
+  display: inline-block;
+}
 
-.card__back {
+label {
+  margin-bottom: 9px;
+}
 
+#card-name,
+#card-number {
+  display: block;
+  width: 100%;
+}
+
+.exp-card {
+  max-width: 72px;
+}
+
+.cvc-wrapper {
+  display: inline-block;
+  max-width: 164px;
+  input {
+    width: 100%;
+  }
+}
+
+.form__btn {
+  width: 100%;
 }
