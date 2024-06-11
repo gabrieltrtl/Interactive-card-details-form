@@ -115,13 +115,15 @@ fieldset {
   display: inline-block;
 }
 
-legend {
+legend,
+label {
   margin-bottom: 9px;
+  color: #21092F;
+  font-weight: 500;
 }
 
 label {
   display: inline-block;
-  margin-bottom: 9px;
 }
 
 #card-name,
@@ -151,4 +153,31 @@ label {
   color: #FFFFFF;
   border-radius: 8px;
   padding: 15px 0;
+}
+
+.completed {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 327px;
+  margin: 0 auto;
+    img {
+      max-width: 80px;
+      margin-bottom: 35px;
+    }
+  h2 {
+    margin-bottom: 16px;
+  }
+  p {
+    margin-bottom: 48px;
+  }
+  button {
+    width: 100%;
+    margin-top: 28px;
+    font-size: 18px;
+    background-color: #21092F;
+    color: #FFFFFF;
+    border-radius: 8px;
+    padding: 15px 0;
+  }
 }
