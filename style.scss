@@ -95,6 +95,19 @@ body {
 .hero__form {
   max-width: 327px;
   margin: 0 auto;
+  font-size: 12px;
+  text-transform: uppercase;
+}
+
+input {
+  border: 1px solid #DFDEE0;
+  border-radius: 8px;
+  padding: 11px 0 11px 16px;
+  letter-spacing: 2px;
+  font-weight: 500;
+  &::placeholder {
+    font-size: 18px;
+  }
 }
 
 fieldset {
@@ -102,7 +115,12 @@ fieldset {
   display: inline-block;
 }
 
+legend {
+  margin-bottom: 9px;
+}
+
 label {
+  display: inline-block;
   margin-bottom: 9px;
 }
 
@@ -110,6 +128,7 @@ label {
 #card-number {
   display: block;
   width: 100%;
+  margin-bottom: 20px;
 }
 
 .exp-card {
@@ -126,4 +145,10 @@ label {
 
 .form__btn {
   width: 100%;
+  margin-top: 28px;
+  font-size: 18px;
+  background-color: #21092F;
+  color: #FFFFFF;
+  border-radius: 8px;
+  padding: 15px 0;
 }
