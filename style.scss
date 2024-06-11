@@ -171,7 +171,11 @@ label {
 #card-number {
   display: block;
   width: 100%;
-  margin-bottom: 20px;
+}
+
+.card-name-wrapper,
+.card-number-wrapper {
+  margin-bottom: 26px;
 }
 
 .exp-card {
@@ -222,4 +226,9 @@ label {
     border-radius: 8px;
     padding: 15px 0;
   }
+}
+
+.error-msg {
+  color: red;
+  margin-top: 8px;
 }
