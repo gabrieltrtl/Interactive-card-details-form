@@ -34,6 +34,22 @@ body {
   background-repeat: repeat-x;
   font-family: "Space Grotesk", sans-serif;
 }
+@media (min-width: 75rem) {
+  body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+@media (min-width: 75rem) {
+  .hero__container {
+    display: flex;
+    max-width: 1049px;
+    gap: 127px;
+    align-items: center;
+  }
+}
 
 .hero__card {
   max-width: 343px;
@@ -41,10 +57,24 @@ body {
   grid-template-rows: 89px 63px 94px;
   margin: 32px auto 48px auto;
 }
+@media (min-width: 75rem) {
+  .hero__card {
+    max-width: 541px;
+    grid-template-columns: max-content 94px;
+    grid-template-rows: initial;
+    gap: 37px 0;
+  }
+}
 
 .card__front,
 .card__back {
   max-width: 286px;
+}
+@media (min-width: 75rem) {
+  .card__front,
+  .card__back {
+    max-width: 447px;
+  }
 }
 
 .card__front {
@@ -55,6 +85,24 @@ body {
 
 .card__back {
   justify-self: end;
+  position: relative;
+}
+@media (min-width: 75rem) {
+  .card__back {
+    grid-column: 1/-1;
+  }
+}
+
+.card__back-cvc {
+  position: absolute;
+  bottom: 0;
+  right: 42px;
+}
+@media (min-width: 75rem) {
+  .card__back-cvc {
+    bottom: 113px;
+    right: 57px;
+  }
 }
 
 .card__logo {
@@ -93,6 +141,11 @@ body {
   margin: 0 auto;
   font-size: 12px;
   text-transform: uppercase;
+}
+@media (min-width: 75rem) {
+  .hero__form {
+    max-width: 381px;
+  }
 }
 
 input {
@@ -157,6 +210,7 @@ label {
   align-items: center;
   max-width: 327px;
   margin: 0 auto;
+  display: none;
 }
 .completed img {
   max-width: 80px;
