@@ -8,18 +8,21 @@ console.log(errorMsg);
 
 cardForm.addEventListener('submit', checkInputs);
 
-function showError(input, errorMessage) {
-  errorMsg.forEach((error) => {
-    error.style.display = "block";
-    error.textContent = errorMessage;
-  })
+function showError(errorElement, errorMessage) {
+  errorElement.style.display = "block";
+  errorElement.textContent = errorMessage;
 }
 
 function checkInputs(event) {
   event.preventDefault();
   formInputs.forEach((input) => {
     if(input.validity.valueMissing) {
-      showError(input, "Can't be blank");
+      showError(input.nextElementSibling, "Can't be blank");
+    } else if (input.validity.tooShort) {
+      showError(input.nextElementSibling, "Wrong format");
+    } else if (/[^0-9]/.test(input.value)) {
+      showError(input.nextElementSibling, "Wrong format, numbers only");
     }
+
   })
 }
