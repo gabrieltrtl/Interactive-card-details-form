@@ -134,7 +134,6 @@ body {
   max-width: 327px;
   margin: 0 auto;
   font-size: 12px;
-  text-transform: uppercase;
   @include device(desktop) {
     max-width: 381px;
   }
@@ -156,15 +155,17 @@ fieldset {
   display: inline-block;
 }
 
+.exp-date-wrapper {
+  margin-right: 20px;
+}
+
 legend,
 label {
   margin-bottom: 9px;
   color: #21092F;
   font-weight: 500;
-}
-
-label {
-  display: inline-block;
+  display: block;
+  text-transform: uppercase;
 }
 
 #card-name,
@@ -184,9 +185,9 @@ label {
 
 .cvc-wrapper {
   display: inline-block;
-  max-width: 164px;
+  max-width: 100%;
   input {
-    width: 100%;
+    width: 164px;
   }
 }
 
@@ -219,7 +220,7 @@ label {
   }
   button {
     width: 100%;
-    margin-top: 28px;
+    margin-bottom: 28px;
     font-size: 18px;
     background-color: #21092F;
     color: #FFFFFF;

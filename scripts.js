@@ -13,16 +13,21 @@ function showError(errorElement, errorMessage) {
   errorElement.textContent = errorMessage;
 }
 
+function formSent(){
+  console.log('Vá pra merda!')
+}
+
 function checkInputs(event) {
   event.preventDefault();
   formInputs.forEach((input) => {
     if(input.validity.valueMissing) {
       showError(input.nextElementSibling, "Can't be blank");
-    } else if (input.validity.tooShort) {
-      showError(input.nextElementSibling, "Wrong format");
-    } else if (/[^0-9]/.test(input.value)) {
+    } else if (input.id === 'card-name' && !/^[a-zA-ZÀ-ÿ\s]+$/.test(input.value)) {
+      showError(input.nextElementSibling, "Only letters allowed");
+    } else if (input.validity.tooShort && /[0-9]/.test(input.value)) {
+      showError(input.nextElementSibling, "Invalid Number");
+    } else if (/[^0-9]/.test(input.value) && input.id !== 'card-name') {
       showError(input.nextElementSibling, "Wrong format, numbers only");
     }
-
   })
 }
