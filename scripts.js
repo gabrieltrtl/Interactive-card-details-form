@@ -15,7 +15,7 @@ function showError(errorElement, errorMessage) {
 }
 
 function formSent(){
-  console.log('Vá pra merda!')
+  console.log('Form Sent')
 }
 
 function checkInputs(event) {
@@ -23,6 +23,7 @@ function checkInputs(event) {
   let isFormValid = true;
 
   formInputs.forEach((input) => {
+    console.log(`Validating input: ${input.id}, value: ${input.value}`);
     if(input.validity.valueMissing) {
       showError(input.nextElementSibling, "Can't be blank");
       isFormValid = false;
