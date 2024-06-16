@@ -9,8 +9,10 @@ const expErrorMsg = cardForm.querySelector('.error-msg[data-for="exp-date"]');
 cardForm.addEventListener('submit', checkInputs);
 
 function showError(errorElement, errorMessage) {
-  errorElement.style.display = "block";
-  errorElement.textContent = errorMessage;
+  if(errorElement) {
+    errorElement.style.display = "block";
+    errorElement.textContent = errorMessage;
+  }
 }
 
 function hideError(errorElement) {
@@ -23,19 +25,22 @@ function hideError(errorElement) {
 function checkInputs(event) {
   event.preventDefault();
   let isFormValid = true;
-  let expDateError = false;
-
+  let expDateErrorMsg = ""
+  
   formInputs.forEach((input) => {
     const errorElement = cardForm.querySelector(`.error-msg[data-for="${input.id}"]`) || (input.id === 'exp-month' || input.id === 'exp-year' ? expErrorMsg : null);
     let errorMessage = "";
-
+    
     if(input.validity.valueMissing) {
-      errorMessage = "Can't be Blank";
       isFormValid = false;
+      errorMessage = "Can't be Blank";
+      if (input.id === 'exp-month' || input.id === 'exp-year') {
+        expDateErrorMsg = "Can't be blank";
+      }
     } else if ((input.id === 'exp-month' || input.id === 'exp-year') && (input.value.length !== 2 || isNaN(input.value))) {
-      errorMessage = "Wrong format";
-      expDateError = true;
       isFormValid = false; 
+      errorMessage = "Wrong format";
+      expDateErrorMsg = "Wrong format";
     } else if (input.id === 'card-name' && !/^[a-zA-ZÀ-ÿ\s]+$/.test(input.value)) {
       errorMessage = "Only letters allowed";
       isFormValid = false;
@@ -54,8 +59,8 @@ function checkInputs(event) {
     }
   });
 
-  if (expDateError) {
-    showError(expErrorMsg, "Wrong Format");
+  if (expDateErrorMsg) {
+    showError(expErrorMsg, expDateErrorMsg);
   } else {
     hideError(expErrorMsg);
   }
