@@ -84,6 +84,12 @@ body {
   grid-row: 2/4;
   position: relative;
 }
+@media (min-width: 75rem) {
+  .card__front {
+    grid-row: unset;
+    order: unset;
+  }
+}
 
 .card__back {
   justify-self: end;

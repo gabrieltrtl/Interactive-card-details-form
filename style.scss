@@ -80,6 +80,10 @@ body {
   order: 1;
   grid-row: 2 / 4;
   position: relative;
+  @include device(desktop) {
+    grid-row: unset;
+    order: unset;
+  }
 }
 
 .card__back {
