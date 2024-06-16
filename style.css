@@ -166,7 +166,12 @@ fieldset {
 }
 
 .exp-date-wrapper {
-  margin-right: 20px;
+  margin-right: 11px;
+}
+@media (min-width: 75rem) {
+  .exp-date-wrapper {
+    margin-right: 20px;
+  }
 }
 
 legend,
