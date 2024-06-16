@@ -47,35 +47,35 @@ body {
 @media (min-width: 75rem) {
   .hero__container {
     display: flex;
-    max-width: 1049px;
-    gap: 127px;
+    max-width: 65.5625rem;
+    gap: 7.9375rem;
     align-items: center;
   }
 }
 
 .hero__card {
-  max-width: 343px;
+  max-width: 21.4375rem;
   display: grid;
   grid-template-rows: 89px 63px 94px;
-  margin: 32px auto 48px auto;
+  margin: 2rem auto 3rem auto;
 }
 @media (min-width: 75rem) {
   .hero__card {
-    max-width: 541px;
+    max-width: 33.8125rem;
     grid-template-columns: max-content 94px;
     grid-template-rows: initial;
-    gap: 37px 0;
+    gap: 2.3125rem 0;
   }
 }
 
 .card__front,
 .card__back {
-  max-width: 286px;
+  max-width: 17.875rem;
 }
 @media (min-width: 75rem) {
   .card__front,
   .card__back {
-    max-width: 447px;
+    max-width: 27.9375rem;
   }
 }
 
@@ -98,20 +98,20 @@ body {
 .card__back-cvc {
   position: absolute;
   bottom: 0;
-  right: 42px;
+  right: 2.625rem;
 }
 @media (min-width: 75rem) {
   .card__back-cvc {
-    bottom: 113px;
-    right: 57px;
+    bottom: 7.0625rem;
+    right: 3.5625rem;
   }
 }
 
 .card__logo {
   position: absolute;
-  left: 19px;
-  top: 17.6px;
-  max-width: 54px;
+  left: 1.1875rem;
+  top: 1.1rem;
+  max-width: 3.375rem;
 }
 
 .front__data {
@@ -119,40 +119,40 @@ body {
   bottom: 0;
   display: flex;
   flex-direction: column;
-  padding: 0 20.9px 19.6px 19px;
-  gap: 17px;
+  padding: 0 1.3062rem 1.225rem 1.1875rem;
+  gap: 1.0625rem;
   color: #FFFFFF;
 }
 
 .data__number {
   font-size: 18px;
-  letter-spacing: 2.2px;
+  letter-spacing: 0.1375rem;
 }
 
 .name-validity {
   font-size: 9px;
-  letter-spacing: 1.29px;
+  letter-spacing: 0.0806rem;
   display: flex;
   justify-content: space-between;
-  margin-right: -6px;
+  margin-right: -0.375rem;
   text-transform: uppercase;
 }
 
 .hero__form {
-  max-width: 327px;
+  max-width: 20.4375rem;
   margin: 0 auto;
   font-size: 12px;
 }
 @media (min-width: 75rem) {
   .hero__form {
-    max-width: 381px;
+    max-width: 23.8125rem;
   }
 }
 
 input {
-  border: 1px solid #DFDEE0;
+  border: 0.0625rem solid #DFDEE0;
   border-radius: 8px;
-  padding: 11px 0 11px 16px;
+  padding: 0.6875rem 0 0.6875rem 1rem;
   letter-spacing: 2px;
   font-weight: 500;
 }
@@ -166,17 +166,17 @@ fieldset {
 }
 
 .exp-date-wrapper {
-  margin-right: 11px;
+  margin-right: 0.6875rem;
 }
 @media (min-width: 75rem) {
   .exp-date-wrapper {
-    margin-right: 20px;
+    margin-right: 1.25rem;
   }
 }
 
 legend,
 label {
-  margin-bottom: 9px;
+  margin-bottom: 0.5625rem;
   color: #21092F;
   font-weight: 500;
   display: block;
@@ -191,11 +191,11 @@ label {
 
 .card-name-wrapper,
 .card-number-wrapper {
-  margin-bottom: 26px;
+  margin-bottom: 1.625rem;
 }
 
 .exp-card {
-  max-width: 72px;
+  max-width: 4.5rem;
 }
 
 .date-cvc-wrapper {
@@ -207,38 +207,38 @@ label {
   max-width: 100%;
 }
 .cvc-wrapper input {
-  width: 164px;
+  width: 10.25rem;
 }
 
 .form__btn {
   width: 100%;
-  margin-top: 28px;
+  margin-top: 1.75rem;
   font-size: 18px;
   background-color: #21092F;
   color: #FFFFFF;
-  border-radius: 8px;
-  padding: 15px 0;
+  border-radius: 0.5rem;
+  padding: 0.9375rem 0;
 }
 
 .completed {
   display: flex;
   flex-direction: column;
   align-items: center;
-  max-width: 327px;
+  max-width: 20.4375rem;
   margin: 0 auto;
   display: none;
 }
 @media (min-width: 75rem) {
   .completed {
-    max-width: 381px;
+    max-width: 23.8125rem;
   }
 }
 .completed img {
-  max-width: 80px;
-  margin-bottom: 35px;
+  max-width: 5rem;
+  margin-bottom: 2.1875rem;
 }
 .completed h2 {
-  margin-bottom: 16px;
+  margin-bottom: 1rem;
 }
 @media (min-width: 75rem) {
   .completed h2 {
@@ -246,36 +246,36 @@ label {
   }
 }
 .completed p {
-  margin-bottom: 48px;
+  margin-bottom: 3rem;
   font-size: 18px;
 }
 .completed button {
   width: 100%;
-  margin-bottom: 28px;
+  margin-bottom: 1.75rem;
   font-size: 18px;
   background-color: #21092F;
   color: #FFFFFF;
-  border-radius: 8px;
-  padding: 15px 0;
+  border-radius: 0.5rem;
+  padding: 0.9375rem 0;
 }
 @media (min-width: 75rem) {
   .completed button {
-    width: 381px;
+    width: 23.8125rem;
   }
 }
 
 .error-msg {
   color: red;
-  margin-top: 8px;
+  margin-top: 0.5rem;
   display: none;
 }
 
 .sr-only {
   position: absolute;
-  width: 1px;
-  height: 1px;
+  width: 0.0625rem;
+  height: 0.0625rem;
   padding: 0;
-  margin: -1px;
+  margin: -0.0625rem;
   overflow: hidden;
   clip: rect(0, 0, 0, 0);
   border: 0;
