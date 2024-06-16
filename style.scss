@@ -41,6 +41,8 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    background: url(./images/bg-main-desktop.png);
+    background-repeat: no-repeat;
   }
 }
 
@@ -212,15 +214,22 @@ label {
   max-width: 327px;
   margin: 0 auto;
   display: none;
+  @include device(desktop) {
+    max-width: 381px;
+  }
   img {
     max-width: 80px;
     margin-bottom: 35px;
   }
   h2 {
     margin-bottom: 16px;
+    @include device(desktop) {
+      font-size: 28px;
+    }
   }
   p {
     margin-bottom: 48px;
+    font-size: 18px;
   }
   button {
     width: 100%;
@@ -230,7 +239,11 @@ label {
     color: #FFFFFF;
     border-radius: 8px;
     padding: 15px 0;
+    @include device(desktop) {
+    width: 381px;
+    }
   }
+  
 }
 
 .error-msg {
