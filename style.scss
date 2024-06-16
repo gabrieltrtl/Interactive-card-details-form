@@ -101,7 +101,7 @@ body {
   @include device(desktop) {
     bottom: 7.0625rem;
     right: 3.5625rem;
-    color: #FFFFFF;
+    color: $neutral-1;
   }
 }
 
@@ -124,7 +124,7 @@ body {
   flex-direction: column;
   padding: 0 1.3062rem 1.225rem 1.1875rem;
   gap: 1.0625rem;
-  color: #FFFFFF;
+  color: $neutral-1;
 }
 
 .data__number {
@@ -176,16 +176,16 @@ fieldset {
 }
 
 .exp-date-wrapper {
-  margin-right: 0.6875rem;
+  margin-right: 11px;
   @include device(desktop) {
-    margin-right: 1.25rem;
+    margin-right: initial;
   }
 }
 
 legend,
 label {
   margin-bottom: 0.5625rem;
-  color: #21092F;
+  color: $primary-1;
   font-weight: 500;
   display: block;
   text-transform: uppercase;
@@ -203,18 +203,33 @@ label {
 }
 
 .exp-card {
-  max-width: 4.5rem;
+  max-width: 72px;
+  @include device(desktop) {
+    max-width: 80px;
+  }
+}
+
+#exp-month {
+  @include device(desktop) {
+    margin-right: 10px;
+  }
 }
 
 .date-cvc-wrapper {
   display: flex;
+  @include device(desktop) {
+    justify-content: space-between;
+  }
 }
 
 .cvc-wrapper {
   display: inline-block;
   max-width: 100%;
   input {
-    width: 10.25rem;
+    width: 164px;
+    @include device(desktop) {
+      width: 191px;
+    }
   }
 }
 
@@ -222,8 +237,8 @@ label {
   width: 100%;
   margin-top: 1.75rem;
   font-size: map-get($fonts, "$small3");
-  background-color: #21092F;
-  color: #FFFFFF;
+  background-color: $primary-1;
+  color: $neutral-1;
   border-radius: 0.5rem;
   padding: 0.9375rem 0;
 }
@@ -256,8 +271,8 @@ label {
     width: 100%;
     margin-bottom: 1.75rem;
     font-size: map-get($fonts, "$small3");
-    background-color: #21092F;
-    color: #FFFFFF;
+    background-color: $primary-1;
+    color: $neutral-1;
     border-radius: 0.5rem;
     padding: 0.9375rem 0;
     @include device(desktop) {

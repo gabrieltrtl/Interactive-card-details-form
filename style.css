@@ -190,11 +190,11 @@ fieldset {
 }
 
 .exp-date-wrapper {
-  margin-right: 0.6875rem;
+  margin-right: 11px;
 }
 @media (min-width: 75rem) {
   .exp-date-wrapper {
-    margin-right: 1.25rem;
+    margin-right: initial;
   }
 }
 
@@ -219,11 +219,27 @@ label {
 }
 
 .exp-card {
-  max-width: 4.5rem;
+  max-width: 72px;
+}
+@media (min-width: 75rem) {
+  .exp-card {
+    max-width: 80px;
+  }
+}
+
+@media (min-width: 75rem) {
+  #exp-month {
+    margin-right: 10px;
+  }
 }
 
 .date-cvc-wrapper {
   display: flex;
+}
+@media (min-width: 75rem) {
+  .date-cvc-wrapper {
+    justify-content: space-between;
+  }
 }
 
 .cvc-wrapper {
@@ -231,7 +247,12 @@ label {
   max-width: 100%;
 }
 .cvc-wrapper input {
-  width: 10.25rem;
+  width: 164px;
+}
+@media (min-width: 75rem) {
+  .cvc-wrapper input {
+    width: 191px;
+  }
 }
 
 .form__btn {
